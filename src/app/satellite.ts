@@ -1,3 +1,5 @@
+import { NgIf } from "@angular/common";
+
 export class Satellite {
 
 	name: string;
@@ -14,8 +16,13 @@ export class Satellite {
 		this.operational = operational;
    }
 	
-	isSpaceDebris(): boolean {
-		return true;
+	isSpaceDebris(string): boolean {
+		if(string === "Space Debris")
+		{
+			return true;
+		}
+		else{return false}
+		
    }
 
 }
